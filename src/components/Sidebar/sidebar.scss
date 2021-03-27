@@ -1,0 +1,108 @@
+@import "../../ui/variables.scss";
+
+.sidebar {
+  background-color: $sidebar-bgcolor--lightMode;
+  width: $sidebar-width;
+  height: 100vh;
+  max-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showMore {
+  width: $sidebar-width;
+  height: $sidebar-width;
+  background-color: $main-violet-color;
+
+  &__item {
+    cursor: pointer;
+    color: $sidebaricon-color;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: $default-transition;
+
+    > .MuiSvgIcon-root {
+      font-size: $sidebaricon-size;
+    }
+
+    &:hover {
+      color: $sidebaricon-hover-color;
+      background-color: darken($color: $main-violet-color, $amount: 3);
+    }
+  }
+}
+
+.topSidebar {
+  flex: 0.7;
+  width: 100%;
+  height: 100%;
+
+  &__box {
+    display: flex;
+    flex-direction: column;
+    margin-top: $sidebar-width / 2;
+
+    > .active {
+      color: $sidebaricon-hover-color;
+      background-color: $darken-hover-bgcolor;
+      border-left: 3px solid $main-violet-color;
+    }
+
+    &__link {
+      height: $sidebar-width;
+      cursor: pointer;
+      transition: $default-transition;
+      border-left: 3px solid transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      > .MuiSvgIcon-root {
+        font-size: $sidebaricon-size;
+        color: $sidebaricon-color;
+      }
+
+      &:hover {
+        color: $sidebaricon-hover-color;
+        background-color: $darken-hover-bgcolor;
+        border-left: 3px solid $main-violet-color;
+      }
+    }
+  }
+}
+
+.bottomSidebar {
+  flex: 0.3;
+  display: flex;
+
+  &__box {
+    flex: 1;
+    display: flex;
+    align-items: flex-end;
+
+    &__item {
+      width: $sidebar-width;
+      height: $sidebar-width;
+      cursor: pointer;
+      color: $sidebaricon-color;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $main-error-color;
+      transition: $default-transition;
+
+      > .MuiSvgIcon-root {
+        font-size: $sidebaricon-size;
+      }
+
+      &:hover {
+        color: $sidebaricon-hover-color;
+        background-color: darken($color: $main-error-color, $amount: 3);
+      }
+    }
+  }
+}

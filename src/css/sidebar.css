@@ -1,0 +1,152 @@
+.sidebar {
+  background-color: #272c36;
+  width: 70px;
+  height: 100vh;
+  max-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.showMore {
+  width: 70px;
+  height: 70px;
+  background-color: #3c39cb;
+}
+
+.showMore__item {
+  cursor: pointer;
+  color: lightgray;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.showMore__item > .MuiSvgIcon-root {
+  font-size: 1.8rem;
+}
+
+.showMore__item:hover {
+  color: white;
+  background-color: #3633c2;
+}
+
+.topSidebar {
+  -webkit-box-flex: 0.7;
+      -ms-flex: 0.7;
+          flex: 0.7;
+  width: 100%;
+  height: 100%;
+}
+
+.topSidebar__box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 35px;
+}
+
+.topSidebar__box > .active {
+  color: white;
+  background-color: #1f232b;
+  border-left: 3px solid #3c39cb;
+}
+
+.topSidebar__box__link {
+  height: 70px;
+  cursor: pointer;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+  border-left: 3px solid transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.topSidebar__box__link > .MuiSvgIcon-root {
+  font-size: 1.8rem;
+  color: lightgray;
+}
+
+.topSidebar__box__link:hover {
+  color: white;
+  background-color: #1f232b;
+  border-left: 3px solid #3c39cb;
+}
+
+.bottomSidebar {
+  -webkit-box-flex: 0.3;
+      -ms-flex: 0.3;
+          flex: 0.3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottomSidebar__box {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.bottomSidebar__box__item {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+  color: lightgray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #80110a;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.bottomSidebar__box__item > .MuiSvgIcon-root {
+  font-size: 1.8rem;
+}
+
+.bottomSidebar__box__item:hover {
+  color: white;
+  background-color: #720f09;
+}
+/*# sourceMappingURL=sidebar.css.map */

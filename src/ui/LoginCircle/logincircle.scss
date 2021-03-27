@@ -1,0 +1,15 @@
+@import "../../ui/variables.scss";
+
+.logincircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.isLogin {
+  background-color: $is_login_true;
+}
+
+.isNotLogin {
+  background-color: $is_not_login;
+}

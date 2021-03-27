@@ -1,0 +1,14 @@
+.logincircle {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+
+.isLogin {
+  background-color: #44cc25;
+}
+
+.isNotLogin {
+  background-color: #80110a;
+}
+/*# sourceMappingURL=logincircle.css.map */

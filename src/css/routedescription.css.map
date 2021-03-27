@@ -1,0 +1,10 @@
+{
+    "version": 3,
+    "mappings": "AAEA,AAAA,iBAAiB,CAAC;EAChB,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAkB;EAC1B,aAAa,EAAE,GAAG,CAAC,KAAK,CCIN,OAGnB;EDNC,OAAO,EAAE,IAAI;EACb,WAAW,EAAE,MAAM;CAMpB;;AAJE,AAAD,uBAAO,CAAC;EACN,WAAW,EAAE,IAAI;EACjB,gBAAgB,ECMG,OAAO;CDL3B",
+    "sources": [
+        "../components/RouteDescription/routedescription.scss",
+        "../ui/variables.scss"
+    ],
+    "names": [],
+    "file": "routedescription.css"
+}

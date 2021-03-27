@@ -1,0 +1,36 @@
+//Main
+//Font size
+$default-font-size: 10px;
+$default-font-color: #1f232b;
+
+//Default transitions
+$default-transition: 0.2s;
+
+//Default border color
+$border-main-color: lighten(
+  $color: lightgray,
+  $amount: 10,
+);
+
+//background colors
+$main-background-color--lightMode: #fff;
+$sidebar-bgcolor--lightMode: #272c36;
+$darken-hover-bgcolor: #1f232b;
+$main-violet-color: #3c39cb;
+$main-error-color: #80110a;
+$is_login_true: #44cc25;
+$is_not_login: #80110a;
+
+//Sidebar
+$sidebar-width: 70px;
+$sidebaricon-color: lightgray;
+$sidebaricon-hover-color: white;
+$sidebaricon-size: 1.8rem;
+
+//Header
+$header-height: 70px;
+$header-bgcolor: #fff;
+$header-bghover: whitesmoke;
+
+//Main
+$main-bgcolor: #fff;
