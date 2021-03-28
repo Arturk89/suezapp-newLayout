@@ -18,7 +18,6 @@ import {
 function App() {
 
   const [user, setUser] = useState(true);
-
  
   return (
     <div className="app">

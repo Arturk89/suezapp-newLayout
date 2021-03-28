@@ -1,20 +1,26 @@
 @import "../../ui/variables.scss";
 
-.header {
-  background-color: $header-bgcolor;
+.headerContent {
+  background-color: --main-description-bgcolor;
   width: 100%;
   height: $header-height;
-  border-bottom: 1px solid $border-main-color;
-  display: flex;
-  align-items: center;
+  border-bottom: 1px solid lightgray;
 
-  &__left {
-    flex: 0.7;
-  }
-
-  &__right {
-    flex: 0.3;
+  &__top {
     display: flex;
-    justify-content: flex-end;
+    align-items: center;
+    height: $header-height;
+
+    &__left {
+      flex: 0.7;
+      padding-left: 70px;
+      height: inherit;
+    }
+
+    &__right {
+      flex: 0.3;
+      display: flex;
+      justify-content: flex-end;
+    }
   }
 }

@@ -1,17 +1,10 @@
 @import "../../../ui/variables.scss";
 
 .headerMenu {
-  display: flex;
-  align-items: center;
-  height: $header-height;
-
-  &__title {
-    margin-left: 70px;
-    margin-right: 70px;
-
-    > h2 {
-      font-size: 1rem;
-    }
+  &__item {
+    // font-size: 1rem;
+    // font-weight: bold;
+    // height: $header-height;
   }
 
   &__content {
@@ -21,30 +14,29 @@
 
     &__item {
       cursor: pointer;
-      height: $header-height;
-      transition: 0.1s;
+      background-color: orange;
+      border-bottom: 2px solid transparent;
+      display: flex;
+      align-items: center;
 
       &__link {
+        display: block;
         color: inherit;
         text-decoration: none;
         font-size: 0.8rem;
         font-weight: bold;
-        height: $header-height;
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+
         padding: 0 35px;
       }
 
-      &:hover {
-        border-bottom: 3px solid $main-violet-color;
+      .active {
+        border-bottom: 2px solid $main-violet-color;
         background-color: $header-bghover;
         color: $main-violet-color;
       }
 
-      .active {
-        border-bottom: 3px solid $main-violet-color;
+      &:hover {
+        border-bottom: 2px solid $main-violet-color;
         background-color: $header-bghover;
         color: $main-violet-color;
       }

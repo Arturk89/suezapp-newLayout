@@ -4,7 +4,8 @@ import Main from '../Main/Main';
 
 import "./contentpage.scss"
 
-const ContentPage = () => {
+const ContentPage = (props) => {
+    console.log(props)
     return (
         <div className="contentpage">
             <Header />

@@ -2,14 +2,14 @@ import BuildIcon from '@material-ui/icons/Build';
 import LocalGroceryStoreIcon from '@material-ui/icons/LocalGroceryStore';
 import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 import MeetingRoomIcon from '@material-ui/icons/MeetingRoom';
-import MenuIcon from '@material-ui/icons/Menu';
+import HomeIcon from '@material-ui/icons/Home';
 import SettingsIcon from '@material-ui/icons/Settings';
 
 export const showMore = [
     {
         id: 1,
-        title: "Rozwiń",
-        icon: <MenuIcon />
+        title: "Strona główna",
+        icon: <HomeIcon />
     }
 ]
 

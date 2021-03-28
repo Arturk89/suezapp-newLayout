@@ -1,0 +1,25 @@
+@import "../../ui/variables.scss";
+
+.headerdescription {
+  width: 100%;
+  height: 35px;
+  background-color: $main-description-bgcolor;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  align-items: center;
+  padding-left: 105px;
+  cursor: default;
+
+  > .MuiSvgIcon-root {
+    color: $default-font-color;
+    display: block;
+    margin-right: 5px;
+    font-size: 1.3rem;
+  }
+
+  > p {
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: $default-font-color;
+  }
+}

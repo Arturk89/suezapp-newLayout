@@ -4,13 +4,10 @@ import { NavLink } from 'react-router-dom';
 import "./headerdisplay.scss"
 
 
-const HeaderDisplay = ({routes, name}) => {
+const HeaderDisplay = ({routes}) => {
     
     return (
         <div className="headerMenu">
-            <div className="headerMenu__title">
-                <h2>{name}</h2>
-            </div>
             <div className="headerMenu__content">
                 {
                     routes.map(item => (
