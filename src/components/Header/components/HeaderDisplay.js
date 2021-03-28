@@ -1,23 +1,31 @@
 import React from 'react'
 import { NavLink } from 'react-router-dom';
+import { appDetails } from "../../../data/AppDetails/details";
 
-import "./headerdisplay.scss"
 
+const HeaderDisplay = ({routes, mainPage}) => {
 
-const HeaderDisplay = ({routes}) => {
+    const appName = appDetails.map(item => item.appName);
     
     return (
-        <div className="headerMenu">
-            <div className="headerMenu__content">
+            <div className="headerContent__top__left__item">
                 {
-                    routes.map(item => (
-                        <div key={item.id} className="headerMenu__content__item">
-                               <NavLink to={item.path} className="headerMenu__content__item__link">{item.title}</NavLink>
-                        </div>
-                    ))
+                
+                    mainPage ? (
+                        <h1 className="HeaderNavbarPageTitle">{appName}</h1>
+                    ) :
+                    (
+                        routes.map(item => (
+                            <NavLink 
+                                key={item.id} 
+                                to={item.path} 
+                                className="headerContent__top__left__item__link">
+                                    {item.title}
+                            </NavLink>
+                        ))
+                    )
                 }
             </div>
-        </div>
     )
 }
 

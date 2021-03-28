@@ -1,4 +1,4 @@
-@import "../../../ui/variables.scss";
+@import "../../../ui/variables";
 
 .header__right__box {
   display: flex;
@@ -61,4 +61,10 @@
       }
     }
   }
+}
+
+.HeaderNavbarPageTitle {
+  padding-left: 35px;
+  font-size: 1.3rem;
+  white-space: nowrap;
 }

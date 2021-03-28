@@ -2,10 +2,10 @@ import React from 'react'
 import HeaderRight from './components/HeaderRight';
 import HeaderDescription from '../HeaderDescription/HeaderDescription';
 import HeaderDisplay from './components/HeaderDisplay';
-import { Route, Switch } from 'react-router-dom';
+import { Redirect, Route, Switch } from 'react-router-dom';
 import { routes } from '../../data/HeaderMenu/menu';
 
-import "./header.scss"
+import "./style.scss"
 
 const Header = () => {
 
@@ -22,6 +22,12 @@ const Header = () => {
                                 />
                             ))
                         }
+                        <Route exact path="/" render={() => (
+                            <HeaderDisplay mainPage />
+                        )}/>
+                        <Route path="/*" >
+                            <Redirect to="/" />
+                        </Route>
                     </Switch>
                 </div>
                 <div className="headerContent__top__right">

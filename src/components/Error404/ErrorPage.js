@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./errorpage.scss"
+import "./style.scss"
 
 const ErrorPage = () => {
     return (

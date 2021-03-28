@@ -1,9 +1,8 @@
 import React from 'react'
 import LoginCircle from "../../../ui/LoginCircle/LoginCircle";
-import '../../../ui/variables.scss'
 import NotificationsIcon from '@material-ui/icons/Notifications';
 
-import "./headerright.scss"
+import "./style.scss"
 
 
 const HeaderRight = () => {

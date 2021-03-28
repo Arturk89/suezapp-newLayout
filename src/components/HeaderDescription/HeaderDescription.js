@@ -5,14 +5,13 @@ import HomeIcon from '@material-ui/icons/Home';
 
 
 
-import "./headerdescription.scss";
+import "./style.scss";
 
 const HeaderDescription = () => {
 
     let location = useLocation()
 
     let current = location.pathname.length > 1 ? location.pathname.replaceAll("/", " > ") : null;
-    console.log(current)
 
     
     return (
@@ -24,7 +23,10 @@ const HeaderDescription = () => {
                         <p>{current}</p>
                     </>
                 ) : (
+                    <>
                         <HomeIcon />
+                        <p>Strona główna</p>
+                    </>
                 )
             }
             

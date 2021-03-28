@@ -1,6 +1,6 @@
 import React from 'react'
 
-import "./logincircle.scss";
+import "./style.scss";
 
 const LoginCircle = () => {
     return (

@@ -2,7 +2,7 @@ import React from 'react'
 import { NavLink, useHistory } from 'react-router-dom';
 import { showMore, topSidebarMenu, bottomSidebarMenu } from '../../data/Sidebar/sidebarMenu';
 
-import "./sidebar.scss"
+import "./style.scss"
 
 const Sidebar = () => {
 

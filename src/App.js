@@ -8,8 +8,6 @@ import "./app.scss"
 
 import {
   BrowserRouter as Router,
-  Link,
-  NavLink,
   Route,
   Switch
 } from 'react-router-dom';
