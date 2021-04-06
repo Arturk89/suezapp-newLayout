@@ -18,6 +18,8 @@ body {
   height: 100vh;
   max-height: 100vh;
   background-color: $main-background-color--lightMode;
+  position: relative;
+  overflow: hidden;
 }
 .app__content {
   display: flex;

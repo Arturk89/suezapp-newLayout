@@ -1,12 +1,14 @@
-import React from 'react'
+import React, { useContext } from 'react'
 import { NavLink, useHistory } from 'react-router-dom';
 import { showMore, topSidebarMenu, bottomSidebarMenu } from '../../data/Sidebar/sidebarMenu';
+import { UserContext } from '../../context/UserContext';
 
 import "./style.scss"
 
 const Sidebar = () => {
 
     const history = useHistory()
+    const { logout } = useContext(UserContext)
 
     const homePage = () => {
         history.push("/")
@@ -44,7 +46,9 @@ const Sidebar = () => {
                         bottomSidebarMenu.map(item => (
                             <div 
                                 key={item.id}
-                                className="bottomSidebar__box__item">
+                                className="bottomSidebar__box__item"
+                                onClick={logout}
+                            >
                                 {item.icon}
                             </div>
                         ))

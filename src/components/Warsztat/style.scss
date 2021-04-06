@@ -1,0 +1,125 @@
+@import "../../ui/variables";
+
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover {
+  background-color: $main-violet-color !important;
+}
+
+.react-datepicker__input-container {
+  border: none !important;
+}
+.react-datepicker__header {
+  background-color: $main-description-bgcolor !important;
+  border-bottom: 1px solid $main-description-bgcolor !important;
+}
+
+//React select
+.react-dropdown-select-item-selected,
+.react-dropdown-select-item:hover {
+  background: $main-violet-color !important;
+  color: whitesmoke;
+}
+.css-6edgck-DropDown {
+  border: 0 !important;
+}
+.css-wmw4vi-ReactDropdownSelect:focus-within {
+  outline: none;
+}
+///////
+
+.settingsBar {
+  padding: 10px 0 10px 105px;
+  background-color: $main-description-bgcolor;
+  display: flex;
+
+  &__search {
+    width: 30%;
+    display: flex;
+    align-items: center;
+
+    > .MuiSvgIcon-root {
+      margin-right: 15px;
+      color: $default-font-color;
+    }
+
+    &__item {
+      border: none;
+      width: 80%;
+      padding-left: 10px;
+      height: 35px;
+      font-size: 1rem;
+      border-radius: 5px;
+      color: $default-font-color;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+  &__rest {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    > div {
+      margin-right: 20px;
+    }
+
+    &__select {
+      margin-right: 20px;
+      background-color: #fff;
+      padding-left: 10px !important;
+      width: 300px;
+      height: 35px;
+      font-size: 1rem;
+      border: 0 !important;
+      border-bottom: 0 !important;
+      margin: 0 !important;
+      box-shadow: none !important;
+      color: $default-font-color;
+      border-radius: 5px;
+
+      &:focus {
+        outline: none !important;
+        box-shadow: none !important;
+      }
+    }
+
+    &__date {
+      border: none !important;
+      padding-left: 10px !important;
+      height: 35px;
+      color: $default-font-color;
+      font-size: 1rem;
+      border-radius: 5px;
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+}
+
+.warsztat {
+  width: 80%;
+  &__settings {
+    width: 100%;
+  }
+  &__row {
+    padding: 20px 10px 20px 20px;
+    width: 100%;
+    // background: linear-gradient(2deg, #fb5060, #a90d23);
+    background-color: gray;
+    height: 50px;
+
+    padding: 10px;
+    border-radius: 5px;
+    transition: 0.1s;
+    color: white;
+    cursor: pointer;
+
+    &:hover {
+      background-color: gray;
+    }
+  }
+}

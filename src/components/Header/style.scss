@@ -3,14 +3,13 @@
 .headerContent {
   background-color: $main-description-bgcolor;
   width: 100%;
-  height: $header-height;
-  border-bottom: 1px solid lightgray;
   min-height: $header-height;
 
   &__top {
     display: flex;
     align-items: center;
     height: $header-height;
+    border-bottom: 1px solid lightgray;
 
     &__left {
       flex: 1;
@@ -37,7 +36,6 @@
           color: $default-font-color;
 
           &:hover {
-            background-color: lightgray;
             border-bottom: 2px solid $main-violet-color;
           }
         }

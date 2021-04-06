@@ -41,12 +41,12 @@ export const routes = [
                 routes: [
                     {
                         id: 1,
-                        title: "Dodaj zlecenie napraw",
+                        title: "Nowe zlecenie",
                         path: "/warsztat/dodaj"
                     },
                     {
                         id: 2,
-                        title: "Wyświetl zlecenia napraw",
+                        title: "Zlecenia napraw",
                         path: "/warsztat/wyswietl"
                     },
                     {
@@ -68,7 +68,7 @@ export const routes = [
                 routes: [
                     {
                         id: 1,
-                        title: "Pojazdy",
+                        title: "Nowy pojazd",
                         path: "/pojazdy/wyswietl"
                     }
                 ],

@@ -3,4 +3,6 @@
 .main {
   background-color: $main-bgcolor;
   flex: 1;
+  overflow-y: auto;
+  height: calc(100vh - 105px);
 }

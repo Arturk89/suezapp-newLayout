@@ -1,8 +1,12 @@
-import React, { useState } from 'react';
+import React, { useContext } from 'react';
+import store from "./store";
+import { Provider } from 'react-redux';
 import ContentPage from './components/ContentMainPage/ContentPage';
 import ErrorPage from './components/Error404/ErrorPage';
 import Login from './components/Login/Login';
 import Sidebar from './components/Sidebar/Sidebar';
+
+import { UserContext } from './context/UserContext';
 
 import "./app.scss"
 
@@ -12,37 +16,36 @@ import {
   Switch
 } from 'react-router-dom';
 
-
 function App() {
 
-  const [user, setUser] = useState(true);
+  const { isUser } = useContext(UserContext)
  
   return (
     <div className="app">
-      <Router>
-        
-          <div className="app__content">
-          {
-            !user ? (
-              <Route path="/login">
-                <Login />
-              </Route>
-            ) : (
-              <Switch>
-                 <Route path="/">
-                <Sidebar />
-                  <div className="app__content__main">
-                    <ContentPage />
-                  </div>
-                </Route>
-                <Route path="/*">
-                  <ErrorPage />
-                </Route>
-              </Switch>
-            )
-          }
-          </div>
-      </Router>
+      <Provider store={store}>
+        <Router>
+            <div className="app__content">
+            {
+              !isUser ? (
+                  <Login />
+              ) : (
+                <Switch>
+                  <Route path="/">
+                    <Sidebar />
+                      <div className="app__content__main">
+                        <ContentPage />
+                      </div>
+                  </Route>
+                  <Route path="/*">
+                    <ErrorPage />
+                  </Route>
+                </Switch>
+              )
+            }
+            </div>
+        </Router>
+        <div id="car-details"></div>
+      </Provider>
     </div>
   );
 }
