@@ -14,16 +14,12 @@ const fetchFailed = () => ({ type: FETCH_CARS_FAILED })
 const fetchSucceded = data => ({ type: FETCH_CARS_SUCCEDED, payload: data })
 
 
-export const fetchCars = () => {
-    return function(dispatch){
+export const fetchCars = () => (dispatch) => {
         dispatch(fetchRequested());
 
         axiosConfig.get('/cars')
-            .then(response => {
-                dispatch(fetchSucceded(response.data))
-            })
-            .catch(err => console.log(err))
-    }
+            .then(response => dispatch(fetchSucceded(response.data)))
+            .catch(err => dispatch(fetchFailed(err)))
 }
 
 

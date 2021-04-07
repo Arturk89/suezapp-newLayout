@@ -1,16 +1,19 @@
 import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
 import { fetchCars } from './redux';
-import Pojazd from "./components/Pojazd"
-import SettingsBar from './components/SettingsBar';
-import CarDetails from './components/Details/CarDetails';
+import { Route } from 'react-router-dom';
+import AddCar from './components/AddCar/AddCar';
+import CarsList from "./components/CarsList/CarsList";
+import SettingsNavbar from "../SettingsNavbar/SettingsNavbar";
+import CarDetails from './components/CarDetails/CarDetails';
 
 import "./style.scss";
 
-const Pojazdy = () => {
+const Car = () => {
 
     const dispatch = useDispatch();
     dispatch(fetchCars())
+
 
     const [isDetailsVisible, setIsDetailsVisible] = useState(false);
     const [singleCar, setSingleCar] = useState([])
@@ -45,21 +48,16 @@ const Pojazdy = () => {
 
     return (
         <div className="cars">
-            <SettingsBar />
-            <div className="cars__content">
-                {
-                    car.map(carItem => (
-                        <Pojazd 
-                            key={carItem.id}
-                            car={carItem} 
-                            setDetailsCarVisible={setDetailsCarVisible}
-                        />
-                    ))
-                }
-            </div>
+                <Route exact path="/pojazdy/dodaj">
+                    <AddCar />
+                </Route>
+                <Route exact path="/pojazdy">
+                    <SettingsNavbar />
+                    <CarsList car={car} setDetailsCarVisible={setDetailsCarVisible} />
+                </Route>
             {isDetailsVisible && <CarDetails isDetailsVisible={isDetailsVisible} closeCarDetailsVisible={closeCarDetailsVisible} singleCar={singleCar} />}
         </div>
     )
 }
 
-export default Pojazdy
+export default Car

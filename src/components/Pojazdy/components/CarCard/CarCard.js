@@ -1,8 +1,9 @@
 import React from 'react'
 import MoreHorizIcon from '@material-ui/icons/MoreHoriz';
+import "./style.scss";
 
 
-const Pojazd = ({car, setDetailsCarVisible}) => {
+const CarCard = ({car, setDetailsCarVisible}) => {
     return (
         <div className="cars__content__card">
             <div className="cars__content__card__dots">
@@ -27,4 +28,4 @@ const Pojazd = ({car, setDetailsCarVisible}) => {
     )
 }
 
-export default Pojazd
+export default CarCard

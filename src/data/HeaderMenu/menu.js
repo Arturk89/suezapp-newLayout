@@ -1,4 +1,4 @@
-
+import AddIcon from '@material-ui/icons/Add';
 
 
 export const routes = [
@@ -69,7 +69,8 @@ export const routes = [
                     {
                         id: 1,
                         title: "Nowy pojazd",
-                        path: "/pojazdy/wyswietl"
+                        path: "/pojazdy/dodaj",
+                        icon: <AddIcon />
                     }
                 ],
             },

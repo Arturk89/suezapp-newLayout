@@ -20,7 +20,7 @@ const HeaderDisplay = ({routes, mainPage}) => {
                                 key={item.id} 
                                 to={item.path} 
                                 className="headerContent__top__left__item__link">
-                                    {item.title}
+                                  {item?.icon}  {item.title}
                             </NavLink>
                         ))
                     )

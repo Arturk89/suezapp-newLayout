@@ -1,0 +1,54 @@
+@import "../../../../ui/variables";
+
+.cars__content__card {
+  width: 200px;
+  height: 280px;
+  background-color: $sidebar-bgcolor--lightMode;
+  border-radius: 10px;
+  margin: 20px 20px 20px 0;
+  color: $main-background-color--lightMode;
+  padding: 10px;
+
+  &__dots {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 10px;
+
+    > .MuiSvgIcon-root {
+      color: $main-description-bgcolor;
+      transition: 0.1s;
+    }
+    > .MuiSvgIcon-root:hover {
+      color: #2fcc6d;
+      cursor: pointer;
+    }
+
+    > p {
+      font-size: 0.9rem;
+      font-weight: bold;
+    }
+  }
+
+  &__img {
+    margin: 0 auto;
+    margin-top: 10px;
+    object-fit: contain;
+    overflow: hidden;
+
+    > img {
+      width: 100%;
+    }
+  }
+  &__description {
+    margin-top: 10px;
+    font-size: 0.7rem;
+    font-weight: bold;
+
+    &__item {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 5px;
+    }
+  }
+}

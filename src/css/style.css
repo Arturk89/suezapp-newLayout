@@ -1,0 +1,127 @@
+/*Font size */
+/* //Default transitions */
+/* //Default border color */
+/* --border-main-color: lighten(
+  lightgray,
+   10
+); */
+/* //background colors */
+/* //Sidebar */
+/* //Header */
+/* //Main */
+.react-datepicker__day--selected,
+.react-datepicker__day--selected:hover {
+  background-color: #3c39cb !important;
+}
+
+.react-datepicker__input-container {
+  border: none !important;
+}
+
+.react-datepicker__header {
+  background-color: #ecebf2 !important;
+  border-bottom: 1px solid #ecebf2 !important;
+}
+
+.react-dropdown-select-item-selected,
+.react-dropdown-select-item:hover {
+  background: #3c39cb !important;
+  color: whitesmoke;
+}
+
+.css-6edgck-DropDown {
+  border: 0 !important;
+}
+
+.css-wmw4vi-ReactDropdownSelect:focus-within {
+  outline: none;
+}
+
+.settingsBar {
+  padding: 10px 0 10px 105px;
+  background-color: #ecebf2;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.settingsBar__search {
+  width: 35%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settingsBar__search > .MuiSvgIcon-root {
+  margin-right: 15px;
+  color: #1f232b;
+}
+
+.settingsBar__search__item {
+  border: none;
+  width: 80%;
+  padding-left: 10px;
+  height: 35px;
+  font-size: 1rem;
+  border-radius: 5px;
+  color: #1f232b;
+}
+
+.settingsBar__search__item:focus {
+  outline: none;
+}
+
+.settingsBar__rest {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.settingsBar__rest > div {
+  margin-right: 20px;
+}
+
+.settingsBar__rest__select {
+  margin-right: 20px;
+  background-color: #fff;
+  padding-left: 10px !important;
+  width: 300px;
+  height: 35px;
+  font-size: 1rem;
+  border: 0 !important;
+  border-bottom: 0 !important;
+  margin: 0 !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+  color: #1f232b;
+  border-radius: 5px;
+}
+
+.settingsBar__rest__select:focus {
+  outline: none !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.settingsBar__rest__date {
+  border: none !important;
+  padding-left: 10px !important;
+  height: 35px;
+  color: #1f232b;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.settingsBar__rest__date:focus {
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */

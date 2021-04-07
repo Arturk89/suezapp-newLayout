@@ -27,13 +27,14 @@
           padding-right: 35px;
           line-height: $header-height;
           white-space: nowrap;
-          height: $header-height;
           text-align: center;
           text-decoration: none;
           border-bottom: 2px solid transparent;
           font-size: 0.8rem;
           font-weight: bold;
           color: $default-font-color;
+          display: flex;
+          align-items: center;
 
           &:hover {
             border-bottom: 2px solid $main-violet-color;

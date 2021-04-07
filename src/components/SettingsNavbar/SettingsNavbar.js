@@ -2,6 +2,7 @@ import React, { useEffect, useState, useRef } from 'react'
 import SearchIcon from '@material-ui/icons/Search';
 import Select from "react-dropdown-select";
 import DatePicker from "react-datepicker";
+import "./style.scss";
 
 const SettingsBar = () => {
 

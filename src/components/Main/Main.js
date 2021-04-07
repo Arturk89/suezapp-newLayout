@@ -1,7 +1,7 @@
 import React from 'react'
 import { Route } from 'react-router-dom';
 
-import Pojazdy from '../Pojazdy/Pojazdy'
+import Car from '../Pojazdy/Car'
 import Warsztat from '../Warsztat/Warsztat';
 
 import "./style.scss"
@@ -10,7 +10,7 @@ const Main = () => {
     return (
         <div className="main">
             <Route path="/pojazdy">
-                <Pojazdy />
+                <Car />
             </Route>
             <Route path="/warsztat">
                 <Warsztat />
